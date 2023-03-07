@@ -1,12 +1,17 @@
-var elem = document.querySelector(".main-carousel");
-var flkty = new Flickity(elem, {
-  // options
-  cellAlign: "left",
-  contain: true,
-});
+let myIndex = 0;
+carousel();
 
-// element argument can be a selector string
-//   for an individual element
-var flkty = new Flickity(".main-carousel", {
-  // options
-});
+function carousel() {
+  let i;
+  let x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+
+  myIndex++;
+  if (myIndex > x.length) {
+    myIndex = 1;
+  }
+  x[myIndex - 1].style.display = "block";
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
