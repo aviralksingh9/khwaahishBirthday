@@ -104,9 +104,12 @@ to {
 }
 
 .header-tab {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   overflow: hidden;
   background-color: #a7517c;
-  padding: 20px 10px;
+  padding: 2px 10px;
 }
 
 /* Style the header-tab links */
@@ -140,9 +143,7 @@ to {
 }
 
 /* Float the link section to the right */
-.header-right {
-  float: right;
-}
+
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
 @media screen and (max-width: 500px) {
@@ -151,9 +152,7 @@ to {
     display: block;
     text-align: left;
   }
-  .header-right {
-    float: none;
-  }
+
 }
 
 .donate-btn:active,.donate-btn:visited,.donate-btn:link {
@@ -162,3 +161,14 @@ to {
   display: inline-block;
   border-radius: 10px;
 }
+
+
+.header-home-contact-about{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: 670px;
+  margin-right: 670px;
+}
+
+
