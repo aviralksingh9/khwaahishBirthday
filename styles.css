@@ -5,6 +5,7 @@
 body{
     background-color: black;
 }
+
 .header{
     display: flex;
     align-items: center;
@@ -104,7 +105,7 @@ to {
 
 .header-tab {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #a7517c;
   padding: 20px 10px;
 }
 
