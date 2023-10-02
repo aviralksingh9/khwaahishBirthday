@@ -155,3 +155,10 @@ to {
     float: none;
   }
 }
+
+.donate-btn:active,.donate-btn:visited,.donate-btn:link {
+  background-color: #f44336;
+  color: white;
+  display: inline-block;
+  border-radius: 10px;
+}
