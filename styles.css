@@ -107,6 +107,11 @@ to {
   overflow: hidden;
   background-color: #a7517c;
   padding: 20px 10px;
+  position: sticky;
+  top: 0px;
+  left:0px;
+  width:1420px;
+  height: 100px;
 }
 
 /* Style the header-tab links */
