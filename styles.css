@@ -101,17 +101,24 @@ to {
 }
 
 .footer{
- 
+ margin-top: 30px;
     text-align: center;
-    color: rgb(8, 128, 150);
-    padding: 20px;
+    /* color: rgb(8, 128, 150); */
+    /* padding: 20px; */
     font-family: roboto,'Baloo Bhaina 2', cursive;
 
 }
-.footer span{
-  color: red;
+.footer h4{
+  background-color: #e60073;
+  padding: 60px 0px;
+  color: white;
 }
-
+.footer span{
+  color: skyblue;
+}
+.copyright{
+  margin-top: 30px;
+}
 .header-tab {
   overflow: hidden;
   position: sticky;
