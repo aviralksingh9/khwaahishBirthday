@@ -1,9 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
 }
 body{
-    background-color: black;
+    background-color: #e0f1f8;
+}
+main{
+  padding: 0 5vh;
 }
 
 .header{
@@ -97,19 +101,29 @@ to {
 }
 
 .footer{
+ 
     text-align: center;
-    color: white;
+    color: rgb(8, 128, 150);
     padding: 20px;
+    font-family: roboto,'Baloo Bhaina 2', cursive;
 
+}
+.footer span{
+  color: red;
 }
 
 .header-tab {
   overflow: hidden;
-  background-color: #a7517c;
-  padding: 20px 10px;
   position: sticky;
   top: 0;
-  left: 0;
+  height: 80px;
+  background-color: #dbc6e6;
+  box-shadow: 0px 0px 4px rgb(28, 31, 32);
+  padding: 5px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto,'Baloo Bhaina 2', cursive;
 }
 
 /* Style the header-tab links */
@@ -131,20 +145,25 @@ to {
 }
 
 /* Change the background color on mouse-over */
-.header-tab a:hover {
-  background-color: #ddd;
+.header-right a:hover {
+  background-color: #f3efef;
   color: black;
+}
+.logo img:hover{
+  background-color: transparent;
+  filter: drop-shadow(0px 0px 1px);
 }
 
 /* Style the active/current link*/
 .header-tab a.active {
-  background-color: dodgerblue;
+  background-color: rgb(107, 149, 190);
   color: white;
 }
 
 /* Float the link section to the right */
 .header-right {
-  float: right;
+  display: flex;
+  gap: 5px;
 }
 
 /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
@@ -158,7 +177,9 @@ to {
     float: none;
   }
 }
-
+.donate-btn:hover{
+  box-shadow:0px 0px 5px black;
+}
 .donate-btn:active,.donate-btn:visited,.donate-btn:link {
   background-color: #f44336;
   color: white;
