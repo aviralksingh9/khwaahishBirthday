@@ -6,6 +6,10 @@
 body{
     background-color: #e0f1f8;
 }
+
+body::-webkit-scrollbar{
+  display: none;
+}
 main{
   padding: 0 5vh;
 }
